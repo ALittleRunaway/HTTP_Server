@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" lang="ru">
+    <title>Geographical objects</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main_screen.css') }}">
+    <!--  Photo by NastyaSensei from Pexels-->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='css/earth-globe.ico') }}">
+    <!--    Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>-->
+</head>
+<body bac>
+    <div class="frame">
+        <div class="text">
+            <h1>Добро пожаловать!</h1>
+                <p>Это HTTP-сервер о географических объектах, реализующий REST API с исходными данными, передаваемыми методом HTTP GET. Результаты возвращаются в формате <big><b>json</b></big>.</p>
+            <h2>Методы и как их применять:</h2>
+            <h3>1.	Информация о городе</h3>
+                <p>Метод принимает идентификатор geonameid и возвращает информацию о городе.</p>
+                <i><p>/city-info?geonameid=<big><b>{string}</b></big></p></i>
+            <h3>2.	Города на странице</h3>
+                <p>Метод принимает страницу и количество отображаемых на странице городов и возвращает список городов с их информацией. </p>
+                <i><p>/page-with-cities?page=<big><b>{int}</b></big>&number=<big><b>{int}</b></big></p></i>
+            <h3>3.	Сравнение двух городов</h3>
+                <p>Метод принимает названия двух городов (на русском языке) и получает информацию о найденных городах, а также дополнительно: какой из них расположен севернее, одинаковая ли у них временная зона и если нет - на сколько часов они различаются.</p>
+                <i><p>/two-cities?city1=<big><b>{string}</b></big>&city2=<big><b>{string}</b></big></p></i>
+            <h3>4. 	Продолжение названия</h3>
+                <p>Метод принимает часть названия города (на английском языке) и возвращает подсказку с возможными вариантами продолжений.
+                <i><p>/name-hint?name=<big><b>{string}</b></big></p></i>
+        </div>
+    </div>
+</body>
+</html>
+

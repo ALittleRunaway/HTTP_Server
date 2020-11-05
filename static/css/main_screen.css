@@ -1,0 +1,28 @@
+.frame {
+    position: absolute;
+    top: 15%;
+    left: 7%;
+    height:63%;
+    width:25%;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 1.5%;
+}
+
+.text 
+{
+    Font-family: monospace;
+    margin: 1.5%;
+    font-size:0.67vw;
+}
+
+body {
+    background-image: url('pexels-nastyasensei-335393.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+
+
+
+
